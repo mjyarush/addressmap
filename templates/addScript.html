@@ -1,0 +1,30 @@
+<div id="addressmapJS">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey={$settings.YandexAPI}&lang=ru_RU" ></script>
+<script>
+    let txtBtn = '{$settings.TextBTN}',
+        txtColor = '{$settings.TextColor}',
+        BtnColor = '{$settings.BtnColor}',
+        BtnPlace = '{$settings.BtnPlace}',
+        MarkType = '{$settings.MarkType}',
+        orderPage = '{$settings.orderPage}';
+</script>
+    {if empty($settings.orderPage)}
+    <script src="/wa-apps/shop/plugins/addressmap/js/addressmap.js"></script>
+    <link rel="stylesheet" href="/wa-apps/shop/plugins/addressmap/css/addressmap.css">
+    {/if}
+<div id="addressmapCont">
+    <div id="addressmapDiv">
+        <div id="amHeader">
+            <h2>{$settings.TextBTN}</h2>
+            <div class="">
+                <button id="hideMap" style="background: {$settings.BtnColor}; color:{$settings.TextColor}">X</button>
+            </div>
+        </div>
+        <div id="addressmap">
+        </div>
+        <div id="amFooter">
+            <span class="" id="saveaddress" style="background:{$settings.BtnColor}; color:{$settings.TextColor};cursor: pointer">Сохранить</span>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,43 @@
+#addressmapCont{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.3);
+}
+#addressmapDiv{
+    background: #fff;
+    width: 85vw;
+    height: 80vh;
+    margin: 10vh auto;
+    padding: 2% 5%;
+}
+#addressmap{
+    height: 85%;
+}
+#amHeader{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+#amFooter{
+    padding-top: 1em;
+}
+#hideMap{
+    height: 40px;
+    width: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+#showmap{
+    display: inline-block;
+    margin: 0.5em 0;
+}
+#showmap, #hideMap, #saveaddress{
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+}
